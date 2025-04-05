@@ -1,0 +1,179 @@
+Best Ever Begginer Python Cheat Sheet 
+{Daily Investors}
+Donations wil be gladly accepeted
+
+//Installs
+flask     					sqlalchemy					spiderfoot
+beautifulsoup4				moch						pymetasploit3
+pytest						xgboosy						pyinstaler
+notebook					shutil						colorama
+glob						yara						termcolor
+signal						virtualenv					rich
+multiprocessing 			ruby gems 					hashcat
+requests					scapy						auditwheel
+interools					impacket					pwntools
+djandgi						shodan						flake8
+numpy						python-nmap					safety
+pandas						sublist3r					bandit
+sqlalchemy					mechanize					pip-auditwheel
+beautifulsoup4				sqlmap						sci-learn
+pytest						subprocess					ect.......................
+notebook					threading
+glob						passlib
+signal						wordlist
+multiprocessing				pyscptodome
+
+
+
+
+
+
+2. Example:
+  cache = apt.cache()
+  cache.update()
+  cache.open()
+  pkg = cache["nmap"]
+  if pkg is installed:
+    print("Nmao is already installed")
+	else:
+	  pkg.mark_install()
+	  print("Installing Nmap...")
+	  
+	  
+	  
+3. Core Concepts:
+   1.Variables
+     *name = "value"
+     *number = 42
+     *boolean = True or False
+
+
+    2.Data Types
+		*int = Integers(e.g.. 1-0, -5)
+		*float = Floating point numbers
+		*str = Strings
+		*bool = Boolean
+		*list = Ordered Collection
+		*tuple = Immmuatable ordered collection
+		*dict = Dictionary
+		*set = Unordered collection
+		
+	3. Operators
+		*Arthimetic: =, +, -, 
+		*Comparison = ==, !=, <, >, >=
+		*Logical: and, or not
+		*Assignment = +=, =, *=, /=
+		
+		
+	4. Control Flow
+	*if statements =
+		if condition:
+		# code to execute if condition is True
+	  elif another_condition:
+	    # code to execute
+	  elif another_condition:
+	  
+	  
+	*For loops
+		for item in iterable:
+		# code to execute as long as condition True
+		
+		
+	*While Loops
+	while condition:
+	# code to execure as long as condition is True
+	
+	
+	*break = exits current loops
+	*continue = Skips current iteration.
+	
+	
+	
+	5. Functions
+	*Defining a function:
+	def function_name(parmeter1, parameter2):
+	#code to execute
+	return result
+	
+	
+	*Calling a function:
+	result = function_name(argument1, argument2)
+	
+	
+	
+	6. Data Structures
+	*Lists:
+	  *list_name = [] #Creates a empty list
+	  *list_name_append(item) #add a item
+	  *list_name_insert(index, item) #Insert a certain item
+	  *list_name.remove #Remove a item
+	  *list_name.pop(index) #Remove and return
+	  *list_name[index] #Access a element by index
+	  *list_name[start:end] #Slice a portition of the list
+	  
+	  
+	7. Dictionaris
+	*dict_name = {} #Create a empty dictionary
+	*dict_name["key"] = "value" #add or update a key-value
+	*value = dict_name["key"] #access the value associated with the key
+	*keys(), vakues(), items() #All are methodds to get keys, values, or key-paored items
+	
+	
+	8. Modules and Packahes
+	*Importing Modules:
+	*import math
+	from math import pi, sin import my_module as mm
+	
+	*Creating your own modules:
+	*Save Python code in a file
+	*Import the module in other Python files
+	
+	
+	9.Object Oriented Programming
+	*Classes:
+	class MyClass:
+	  def __init__(self, attribute1, attribute2):
+	    self.attribute1 = attriute1
+		self.attribute2 = attribute2
+		
+	  def my_method(self):
+	    #Code to be executed
+		
+    *Objects = Instances of a class
+	*Attributes = Chatacteristics of an Object
+    *Methods = Functions that belong to an Object
+	
+	
+	10. File Handling
+	*Opening a file:
+	file = open("filename.txt"", 'r')
+	# 'r' for reading, 'w' for writing, 'a' for apending
+	
+	*Reading from a file:
+	  content = file.read()
+	line = file.readline()
+    lines = file.readlines()
+
+
+    *Writing to a file:
+    file.write()("some text")
+
+   *Closing a file:
+    file.close()
+
+
+
+
+
+   11. Exception Handling
+   *try....except blocks:
+    try:
+      #Code that might raise an exception
+    exception
+    except ExceptionType:
+      #Code to handle the exception
+
+
+	  
+	
+
