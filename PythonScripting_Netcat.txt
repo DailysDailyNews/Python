@@ -1,0 +1,9 @@
+//Python Scripting as a one Liner
+1. #!/usr/bin/python3
+2.You must import os. The "os" library is what runs the shell commands 
+3. Now you must add:
+   for line in r: //Helps iterate through the text file line by line
+   line = line.rstrip() //Strips the whitespace
+   command = str('nc -nv -w 1 -z' + line + ' 80')
+   os.system(command) //Runs the netcat port scanner
+ r.close() //Closes the text file.
