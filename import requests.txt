@@ -1,0 +1,27 @@
+import requests
+
+url = "https://enter_target.com"
+
+try:
+    response = requests.get(url, allow_redirects=False)  # Prevent automatic redirects
+
+    if response.status_code == 200:
+        print(f"Request successful! Status code: {response.status_code}")
+        print(response.text)
+    elif 300 <= response.status_code < 400:
+        print(f"Request resulted in a redirect (status code: {response.status_code}).")
+        print(f"The redirect location is: {response.headers.get('Location')}")
+          new_url = response.headers.get('Location')
+          if new_url:
+              new_response = requests.get(new_url)
+              if new_response.status_code == 200:
+                  print(f"Successfully followed redirect to: {new_url}")
+                  print(new_response.text)
+              else:
+                  print(f"Failed to follow redirect. Status code: {new_response.status_code}")
+    else:
+        print(f"Request failed. Status code: {response.status_code}")
+        response.raise_for_status()  # Raise an HTTPError for bad responses (4xx or 5xx)
+
+except requests.exceptions.RequestException as e:
+    print(f"An error occurred during the request: {e}")
